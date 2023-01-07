@@ -1,60 +1,70 @@
-# SHOPPER STORE 
-A Ecommerce Shoppong website
+# Getting Started with Create React App
 
-### Contents : 
-- [ScreenShots](#screenshots)
-- [Extensions](#extensions)
-- [Project Video](#project-video)
-- [Learnings](#learnings)
-- [Libraries](#libraries)
-- [Pages](#pages)
-- [Components](components)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## ScreenShots 
+## Available Scripts
 
-## Project Video 
+In the project directory, you can run:
 
-## Learning 
-## Libraries
+### `npm start`
 
-- Styled Components : For Styling the Components 
-- React Router : For Routing different Pages
-- Axios: For Fetching the API details 
-- react-icons: For using different icons in the Project 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Pages 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- Home Page 
-- Contact page
-- About Page 
-- Single Product Page 
-- Products Page 
-- Cart 
+### `npm test`
 
-### Components 
-- Header Component
-    - Navbar : Home Link , Contact Link , About Link .
-- Hero Component 
-    
-### Task List :-
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Basic Setup 
-- Initialising the Project & Setting up the Folder Structure of the Project.
-- Create the Router Structure & Routes to be used.
-- Setup the Styling Library : Styled Components.
-- 
+### `npm run build`
 
-- Task 1 : Header Component
-    - Add Logo 
-    - NavBar 
-    - Add Cart 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Task 2 : Make the NavBar Responsive 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-### Extensions 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- Prettier 
-- React ES7 Name: ES7+ React/Redux/React-Native snippets
-]
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
