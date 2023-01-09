@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 import SearchIcon from "@mui/icons-material/Search";
+import Badge from "@mui/material/Badge";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const Container = styled.div`
   height: 60px;
@@ -26,6 +28,7 @@ const Left = styled.div`
 
 const SearchContainer = styled.span`
   border: 0.5px solid lightgray;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   margin-left: 20px;
@@ -34,13 +37,31 @@ const SearchContainer = styled.span`
 
 const Input = styled.input`
   border: none;
+  &:focus {
+    outline: none;
+  }
 `;
 
 const Center = styled.div`
   flex: 1;
 `;
+
+const Logo = styled.h1`
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+`;
+
 const Right = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+const MenuItem = styled.div`
+  margin-left: 25px;
+  font-size: 14px;
+  cursor: pointer;
 `;
 
 const Navbar = () => {
@@ -51,11 +72,21 @@ const Navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input />
-            <SearchIcon />
+            <SearchIcon style={{ color: "gray", fontSize: "16px" }} />
           </SearchContainer>
         </Left>
-        <Center>Center</Center>
-        <Right>Right</Right>
+        <Center>
+          <Logo>Shopper Store.</Logo>
+        </Center>
+        <Right>
+          <MenuItem>Register</MenuItem>
+          <MenuItem>Sign In</MenuItem>
+          <MenuItem>
+            <Badge badgeContent={4} color="secondary">
+              <ShoppingCartOutlinedIcon />
+            </Badge>
+          </MenuItem>
+        </Right>
       </Wrapper>
     </Container>
   );
