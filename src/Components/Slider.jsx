@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import { sliderItems } from "../data.js";
+import { sliderItems } from "../data";
 import { useState } from "react";
 
 const Container = styled.div`
@@ -67,12 +67,14 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
   font-size: 70px;
 `;
+
 const Desc = styled.p`
   margin: 50px 5px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
 `;
+
 const Button = styled.button`
   padding: 10px;
   font-size: 20px;
@@ -82,13 +84,14 @@ const Button = styled.button`
 
 const Slider = () => {
   const [slideState, setSlideState] = useState(0);
+
   const handleArrow = (direction) => {
     let lastIndex = sliderItems.length - 1;
     if (direction === "left")
       setSlideState(slideState > 0 ? slideState - 1 : lastIndex);
     else setSlideState(slideState === lastIndex ? 0 : slideState + 1);
-    console.log(slideState);
   };
+
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleArrow("left")}>
@@ -97,7 +100,7 @@ const Slider = () => {
       <Wrapper slideState={slideState}>
         {sliderItems.map((item) => {
           return (
-            <Slide bg={item.bg}>
+            <Slide bg={item.bg} key={item.id}>
               <ImageContainer>
                 <Image src={item.img} />
               </ImageContainer>
